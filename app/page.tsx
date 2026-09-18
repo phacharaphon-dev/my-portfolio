@@ -5,6 +5,8 @@ import StarBackground from '@/components/StarBackground';
 import Navbar from '@/components/Navbar';
 import About from '@/components/About';
 import StarWarpIntro from '@/components/StarWarpIntro'; // เอฟเฟกต์ดาวหมุนวนตามคลิป
+import ProjectsSection from '@/components/ProjectsSection'; 
+import Contact from '@/components/Contact'; // 👈 1. เพิ่มบรรทัดนี้นำเข้าหน้า Contact
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -34,6 +36,16 @@ export default function Home() {
         <section id="about" className="max-w-6xl mx-auto px-6 py-24 min-h-screen flex items-center justify-center">
           <About />
         </section>
+
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+
+        {/* 👈 2. เพิ่มส่วนของ Contact ต่อท้าย Projects */}
+        <section id="contact">
+          <Contact />
+        </section>
+
       </div>
     </main>
   );

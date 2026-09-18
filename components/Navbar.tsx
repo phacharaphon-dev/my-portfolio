@@ -42,12 +42,13 @@ export default function Navbar() {
         >
           Projects
         </a>
+        {/* เปลี่ยนจาก Certificate เป็น Experience และเปลี่ยน id เป็น experience */}
         <a 
-          href="#certificate" 
-          onClick={(e) => handleScroll(e, 'certificate')}
+          href="#experience" 
+          onClick={(e) => handleScroll(e, 'experience')}
           className="hover:text-cyan-400 transition-colors cursor-pointer"
         >
-          Certificate
+          Experience
         </a>
         <a 
           href="#contact" 
